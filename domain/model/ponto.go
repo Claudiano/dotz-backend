@@ -3,7 +3,7 @@ package model
 import "time"
 
 type Ponto struct {
-	Id_ponto   int32
-	DataHora   time.Time
-	Id_usuario int32
+	IDPonto   int32 `gorm:AUTO_INCREMENT`
+	DataHora  time.Time
+	IDUsuario int32
 }
